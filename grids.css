@@ -1,0 +1,89 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3 linear;
+}
+
+.container{
+background: linear-gradient(45deg, blueviolet,bisque );
+padding-bottom: 40px;
+color: #000000;
+text-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+width: 100%;
+height: auto;
+border-radius: 50px;
+}
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+.container .container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, .1fr));
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 110px;
+}
+.container .container-box .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px;
+    width: 240px;
+    height: 340px;
+    margin-left: 0;
+}
+
+.container .container-box .box img{
+    height: 180px;
+}
+.container .container-box .box h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .container-box .box p{
+    color: #777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+.container .container-box .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: white;
+    font-size: 17px;
+    border-radius: 17px;
+    padding: 8px 25px;
+}
+.container .container-box .box .btn:hover{
+    background-color: rgb(255, 192, 203);
+    color: white;
+    transition: 0.2s;
+}
+.container .container-box .box:hover{
+    box-shadow: 0 10px 15px 20px rgba(0, 0, 0, .1);
+    transform: scale(1. 03);
+}
+@media(max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+}
+@media(min-width: 492px){
+   .container{
+    padding: 10px;
+   }
+}
